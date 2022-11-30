@@ -33,4 +33,37 @@ class Hombres extends CI_Controller
       echo "<h1>No</h1>";
     }
   }
+  public function eliminarHombre($id)
+  {
+    if ($this->hombre->eliminarHombre($id)) {
+      redirect('hombres');
+    } else {
+      echo "<h1>No se pudo eliminar</h1>";
+    }
+  }
+  public function cargarDatosPrenda($id)
+  {
+    $data["prendaEditar"] = $this->hombre->obtenerHombrePorId($id);
+    $this->load->view('header');
+    $this->load->view('hombres/editar', $data);
+    $this->load->view('footer');
+  }
+
+  public function editarHombre($id)
+  {
+    $datosEditarHombre = array(
+      "nombre_ph" => $this->input->post('nombre_ph'),
+      "precio_ph" => $this->input->post('precio_ph'),
+      "tipo_ph" => $this->input->post('tipo_ph'),
+      "foto_ph" => $this->input->post('foto_ph'),
+      "descripcion_ph" => $this->input->post('descripcion_ph'),
+    );
+
+    if ($this->hombre->editarHombrePorId($id, $datosEditarHombre)) {
+      redirect('hombres'); //redirecciona a la vista index
+      echo print_r($datosEditarHombre);
+    } else {
+      echo "<h1>Error al actualizar</h1>";
+    }
+  }
 }

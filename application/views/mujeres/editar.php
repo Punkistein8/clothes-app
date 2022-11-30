@@ -9,32 +9,32 @@
 
 <?php if ($prendaEditar) : ?>
   <div class="flex justify-center w-full">
-    <form class="flex flex-col w-1/3 p-7 m-10 rounded-xl shadow-xl shadow-gray-300 bg-gray-100" method="POST" action="<?php echo site_url('hombres/editarHombre'); ?>/<?php echo $prendaEditar->id_ph ?>">
+    <form class="flex flex-col w-1/3 p-7 m-10 rounded-xl shadow-xl shadow-gray-300 bg-gray-100" method="POST" action="<?php echo site_url('mujeres/editarMujer'); ?>/<?php echo $prendaEditar->id_pm ?>">
       <ul class="flex flex-col gap-5">
         <li class="flex flex-row gap-2 justify-between">
           <label class="text-emerald-900 text-xl" for="nombre">Nombre:</label>
-          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="nombre_ph" id="nombre" required value="<?php echo $prendaEditar->nombre_ph ?>">
+          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="nombre_pm" id="nombre" required value="<?php echo $prendaEditar->nombre_pm ?>">
         </li>
         <li class="flex flex-row gap-2 justify-between">
           <label class="text-emerald-900 text-xl" for="precio">Precio:</label>
-          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="precio_ph" id="precio" required value="<?php echo $prendaEditar->precio_ph  ?>">
+          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="precio_pm" id="precio" required value="<?php echo $prendaEditar->precio_pm  ?>">
         </li>
         <li class="flex flex-row gap-2 justify-between">
           <label class="text-emerald-900 text-xl" for="tipo">Tipo:</label>
-          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="tipo_ph" id="tipo" required value="<?php echo $prendaEditar->tipo_ph  ?>">
+          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="tipo_pm" id="tipo" required value="<?php echo $prendaEditar->tipo_pm  ?>">
         </li>
         <li class="flex flex-row gap-2 justify-between">
           <label class="text-emerald-900 text-xl" for="foto">Foto:</label>
-          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="foto_ph" id="foto" required value="<?php echo $prendaEditar->foto_ph  ?>">
+          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="foto_pm" id="foto" required value="<?php echo $prendaEditar->foto_pm  ?>">
         </li>
         <li class="flex flex-row gap-2 justify-between">
           <label class="text-emerald-900 text-xl" for="descripcion">Descripción:</label>
-          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="descripcion_ph" id="descripcion" required value="<?php echo $prendaEditar->descripcion_ph  ?>">
+          <input class="w-8/12 border-[0.5px] border-gray-300 rounded-md p-1" type="text" name="descripcion_pm" id="descripcion" required value="<?php echo $prendaEditar->descripcion_pm  ?>">
         </li>
         </li>
         <li class="flex flex-row">
           <button type="submit" class="text-center w-full p-2 rounded-xl rounded-r-none cursor-pointer bg-emerald-500 hover:bg-emerald-600 text-white text-xl">Guardar</button>
-          <a href="<?= site_url('hombres') ?>" class="text-center w-full p-2 rounded-xl rounded-l-none cursor-pointer bg-red-500 hover:bg-red-600 text-white text-xl">Cancelar</a>
+          <a href="<?= site_url('mujeres') ?>" class="text-center w-full p-2 rounded-xl rounded-l-none cursor-pointer bg-red-500 hover:bg-red-600 text-white text-xl">Cancelar</a>
         </li>
       </ul>
     </form>

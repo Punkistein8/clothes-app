@@ -42,7 +42,7 @@ class Mujer extends CI_Model
   # Método para editar una prenda mujer por ID
   public function editarMujerPorId($id, $nuevosDatos)
   {
-    $this->db->where('id_ph', $id);
+    $this->db->where('id_pm', $id);
     return $this->db->update('prenda-mujer', $nuevosDatos);
   }
   // $this->db->where('id_est', $id);

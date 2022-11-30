@@ -29,7 +29,8 @@
         <ul class="flex items-center  space-x-8 lg:flex">
           <li><a href="<?= base_url('Hombres') ?>" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400">Hombres</a></li>
           <li><a href="<?= base_url('Mujeres') ?>" class=" font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400">Mujeres</a></li>
-          <li><a href="<?= base_url('SobreNos') ?>" aria-label=" About us" title="About us" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400">Sobre Nosotros</a></li>
+          <li><a href="<?= base_url('Alcoholes') ?>" aria-label="Licores" title="Licores" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400">Licores</a></li>
+          <li><a href="<?= base_url('Tecnologias') ?>" aria-label="Tecnología" title="Tecnologías" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-400">Tecnología</a></li>
         </ul>
       </div>
     </div>

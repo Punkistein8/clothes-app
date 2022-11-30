@@ -28,7 +28,7 @@ class Mujer extends CI_Model
     return $this->db->delete('prenda-mujer');
   }
   # Método para obtener una prenda mujer  por ID
-  public function obtenermujerPorId($id)
+  public function obtenerMujerPorId($id)
   {
     $this->db->where('id_pm', $id);
     $mujeres = $this->db->get('prenda-mujer');
@@ -40,7 +40,7 @@ class Mujer extends CI_Model
   }
 
   # Método para editar una prenda mujer por ID
-  public function editarmujerPorId($id, $nuevosDatos)
+  public function editarMujerPorId($id, $nuevosDatos)
   {
     $this->db->where('id_ph', $id);
     return $this->db->update('prenda-mujer', $nuevosDatos);

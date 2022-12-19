@@ -14,6 +14,13 @@ class Hombres extends CI_Controller
   {
     $data["listaHombres"] = $this->hombre->getHombres();
     $this->load->view('header');
+    $this->load->view('hombres/index-public', $data);
+    $this->load->view('footer');
+  }
+  public function indexPriv()
+  {
+    $data["listaHombres"] = $this->hombre->getHombres();
+    $this->load->view('header');
     $this->load->view('hombres/index', $data);
     $this->load->view('footer');
   }

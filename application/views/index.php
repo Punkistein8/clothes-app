@@ -19,7 +19,7 @@
         contamos con una gran variedad de productos de la mejor calidad.
       </p>
       <div class="flex items-center">
-        <a href="hombres.php" class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-teal-400 hover:bg-teal-500 focus:shadow-outline focus:outline-none">
+        <a href="<?= base_url('Hombres'); ?>" class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-teal-400 hover:bg-teal-500 focus:shadow-outline focus:outline-none">
           Nuestros productos
         </a>
         <a href="sobre_nosotros.php" aria-label="" class="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-teal-700">Sobre Nosotros</a>
